@@ -13,7 +13,7 @@ After some thought, it turns out one way to make this more efficient is to obser
 is prime, we only need to check that it is not divisible by primes less than or equal to the square root of x.
 This becomes obvious when you ask, what if no prime p <= sqrt(x) has the property that x%p == 0.
 Then, if x were not prime there would need to be at least two prime numbers p1, p2 with sqrt(x) < p1,p2 < x
-with p1*p2=x, but p1*p2 > sqrt(x)^2... Another way to think of this is that if p is the smallest prime < x,
+with p1*p2 <= x, but p1*p2 > sqrt(x)^2... Another way to think of this is that if p is the smallest prime < x,
 then x must be at least p^2 since all prime factors of x are at least size p, and with p < x, it must that
 there are at least two prime factors.
 
